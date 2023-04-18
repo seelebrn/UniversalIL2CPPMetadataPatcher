@@ -221,7 +221,7 @@ static class MetadataProcessing
             uint vansity = reader.ReadUInt32();
             if (vansity != 0xFAB11BAF)
             {
-                throw new Exception("标志检查不通过");
+                throw new Exception("Header Check Failed");
             }
             int version = reader.ReadInt32();
             stringLiteralOffset = reader.ReadUInt32();     
