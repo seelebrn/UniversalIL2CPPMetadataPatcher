@@ -1,4 +1,20 @@
- static class MetadataProcessing
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.IO;
+using System.Linq;
+using System.Text.RegularExpressions;
+using Il2CppInterop;
+using Il2CppInterop.Runtime;
+using System.Threading.Tasks;
+using System.Diagnostics;
+using System.Runtime.InteropServices;
+using LibCpp2IL;
+using UnityEngine;
+using LibCpp2IL.Metadata;
+using BepInEx; 
+
+static class MetadataProcessing
     {
         public static int stringliteralcount = 0;
         public static Dictionary<string, string> processbuffer = new Dictionary<string, string>();
